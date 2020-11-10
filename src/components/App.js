@@ -1,13 +1,9 @@
 import CandidateCard from './CandidateCard'
+import { useCandidates } from '../data'
 import logo from '../assets/logo.svg'
-import avatarTrump from '../assets/avatar-trump.png'
-import avatarBiden from '../assets/avatar-biden.png'
 
 const App = () => {
-  const candidates = [
-    { name: 'Donald Trump', avatar: avatarTrump, votes: 0 },
-    { name: 'Joe Biden', avatar: avatarBiden, votes: 0 },
-  ]
+  const candidates = useCandidates()
 
   return (
     <div id="app">
@@ -20,14 +16,12 @@ const App = () => {
         </button>
 
         <div className="card-deck">
-          <CandidateCard {...candidates[0]} />
-          <CandidateCard {...candidates[1]} />
-          <CandidateCard {...candidates[0]} />
-          <CandidateCard {...candidates[1]} />
+          {candidates.map((candidate) => (
+            <CandidateCard key={candidate.name} {...candidate} />
+          ))}
         </div>
-        {false && (
-          <img src={logo} className="logo" alt="logo" />
-        )}
+
+        <img src={logo} className="logo" alt="logo" />
       </div>
     </div>
   )

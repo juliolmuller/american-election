@@ -8,6 +8,8 @@ body {
   background: #0f0c29;
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  font-size: calc(10px + 2vmin);
+  color: #fff;
 }
 
 body, button, input, textarea {
@@ -18,40 +20,20 @@ body, button, input, textarea {
 
 #app {
   text-align: center;
-}
-
-.logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.container {
-  position: relative;
-  min-height: 90vh;
-  max-width: 1200px;
-  margin: 0 auto;
-  font-size: calc(10px + 2vmin);
-  color: #fff;
+  min-height: 100vh;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .title {
@@ -152,4 +134,25 @@ body, button, input, textarea {
 
 .candidate-card > button:hover {
   background-color: #130f35;
+}
+
+.logo {
+  display: none;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }

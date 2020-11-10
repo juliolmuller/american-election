@@ -6,7 +6,7 @@ const CandidateCard = (props) => (
       <h2>{props.name}</h2>
     </header>
     <span>{props.votes} <small>votes</small></span>
-    <button type="button" onClick={props.vote}>+Vote</button>
+    <button type="button" onClick={props.addVote}>+Vote</button>
   </div>
 )
 
