@@ -1,15 +1,19 @@
-body {
+html, body {
+  width: 100%;
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+
+body, button, input, textarea {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #app {
@@ -37,12 +41,83 @@ code {
 }
 
 .container {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 90vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-deck > div {
+  flex-basis: 30%;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+.candidate-card {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.candidate-card > header {
+  display: flex;
+  align-items: center;
+}
+
+.candidate-card > header img {
+  height: 150px;
+}
+
+.candidate-card > header h1 {
+  font-size: xx-large;
+}
+
+.candidate-card > span {
+  margin-top: 24px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.candidate-card > span small {
+  font-size: 30px;
+  margin-left: 16px;
+}
+
+.candidate-card > button {
+  width: 80%;
+  background-color: #0f0c29;
+  transition: background-color 0.3s;
+  margin-top: 24px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: large;
+  letter-spacing: 10px;
+  cursor: pointer
+}
+
+.candidate-card > button:hover {
+  background-color: #130f35;
 }
