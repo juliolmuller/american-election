@@ -13,7 +13,7 @@ Prof. Alexander Robert Kutzke
 * [Instruções para submissão de tarefas e trabalhos](https://gitlab.tadsufpr.net.br/ds122-alexkutzke/material/blob/master/instrucoes_submissao_tarefas_e_trabalhos.md)
 * [Video aula](https://www.youtube.com/watch?v=d6ZTnQNhoCo)
 
-# Atividade React 
+# Atividade React
 
 Você foi contratado pelo governo de um país norte americano para modernizar
 o processo de contagem dos votos das eleições dessa nação.
@@ -27,7 +27,6 @@ Ao final da contagem, um botão "Finalizar contagem" será pressionado. O conte�
 
 Exemplo de funcionamento:
 
-![Sistema de votação](images/exemplo.gif)
+![Sistema de votação](https://gitlab.tadsufpr.net.br/ds151-alexkutzke/ds151-react-vote-assignment/raw/master/images/exemplo.gif)
 
 "Pontos extras para um layout maneiro" =>  *We can neither confirm nor deny this information*.
-
