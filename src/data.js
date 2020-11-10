@@ -2,6 +2,12 @@ import { useState } from 'react'
 import avatarTrump from './assets/avatar-trump.png'
 import avatarBiden from './assets/avatar-biden.png'
 
+export const useElection = () => {
+  const [isOpen, setState] = useState(true)
+
+  return [isOpen, () => setState(false)]
+}
+
 export const useCandidate = (candidateName, candidateAvatar) => {
   const [name] = useState(candidateName)
   const [avatar] = useState(candidateAvatar)

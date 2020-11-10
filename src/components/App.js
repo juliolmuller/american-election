@@ -1,8 +1,9 @@
-import CandidateCard from './CandidateCard'
-import { useCandidates } from '../data'
+import { useElection, useCandidates } from '../data'
+import CandidatesDeck from './CandidatesDeck'
 import logo from '../assets/logo.svg'
 
 const App = () => {
+  const [isRunning, finish] = useElection()
   const candidates = useCandidates()
 
   return (
@@ -11,17 +12,18 @@ const App = () => {
         <h1 className="title">
           The Election
         </h1>
-        <button type="button" className="btn-finish">
-          Finish Counting
-        </button>
 
-        <div className="card-deck">
-          {candidates.map((candidate) => (
-            <CandidateCard key={candidate.name} {...candidate} />
-          ))}
-        </div>
+        {isRunning ? (
+          <>
+            <button type="button" className="btn-finish" onClick={finish}>
+              Finish Counting
+            </button>
 
-        <img src={logo} className="logo" alt="logo" />
+            <CandidatesDeck candidates={candidates} />
+          </>
+        ) : (
+          <img src={logo} className="logo" alt="logo" />
+        )}
       </div>
     </div>
   )

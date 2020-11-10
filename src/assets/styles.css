@@ -138,7 +138,6 @@ body, button, input, textarea {
 }
 
 .logo {
-  display: none;
   height: 40vmin;
   pointer-events: none;
 }
