@@ -12,6 +12,13 @@ const App = () => {
   return (
     <div id="app">
       <div className="container">
+        <h1 className="title">
+          The Election
+        </h1>
+        <button type="button" className="btn-finish">
+          Finish Counting
+        </button>
+
         <div className="card-deck">
           <CandidateCard {...candidates[0]} />
           <CandidateCard {...candidates[1]} />
