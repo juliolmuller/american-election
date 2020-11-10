@@ -1,6 +1,6 @@
 import { useElection, useCandidates } from '../data'
 import CandidatesDeck from './CandidatesDeck'
-import logo from '../assets/logo.svg'
+import ElectionResult from './ElectionResult'
 
 const App = () => {
   const [isRunning, finish] = useElection()
@@ -22,7 +22,7 @@ const App = () => {
             <CandidatesDeck candidates={candidates} />
           </>
         ) : (
-          <img src={logo} className="logo" alt="logo" />
+          <ElectionResult candidates={candidates} />
         )}
       </div>
     </div>

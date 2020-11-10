@@ -137,22 +137,50 @@ body, button, input, textarea {
   cursor: pointer
 }
 
-.logo {
-  height: 40vmin;
+.election-result .election-winner {
+  position: relative;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.election-result .election-winner .spinner {
+  height: 350px;
   pointer-events: none;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.election-result .election-winner .avatar {
+  position: absolute;
+  padding-top: 72px;
+  height: 250px;
+  pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.election-result .rank {
+  width: 60%;
+  padding-top: 60px;
+  margin: 0 auto;
+}
+
+.election-result .rank-item:first-child {
+  border-top: 1px dashed #fff;
+}
+
+.election-result .rank-item {
+  width: 100%;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px dashed #fff;
+  display: flex;
+}
+
+.election-result .rank-item > div {
+  flex: 1 0 30%;
+  text-align: right;
+}
+
+.election-result .rank-item > div:first-child {
+  flex-grow: 2;
+  text-align: left;
 }
