@@ -65,14 +65,14 @@ body, button, input, textarea {
   cursor: pointer;
 }
 
-.card-deck {
+.candidates-deck {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.card-deck > div {
+.candidates-deck > div {
   flex-grow: 1;
   box-sizing: border-box;
   margin: 0 10px 30px;
