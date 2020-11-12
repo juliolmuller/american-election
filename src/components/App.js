@@ -10,13 +10,13 @@ const App = () => {
     <div id="app">
       <div className="container">
         <h1 className="title">
-          The Election
+          American Election
         </h1>
 
         {isRunning ? (
           <>
             <button type="button" className="btn-finish" onClick={finish}>
-              Finish Counting
+              Done Voting
             </button>
 
             <CandidatesDeck candidates={candidates} />

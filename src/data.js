@@ -20,8 +20,8 @@ export const useCandidate = (candidateName, candidateAvatar) => {
 
 export const useCandidates = () => {
   const candidates = []
-  candidates.push(useCandidate('Donald Trump', avatarTrump))
-  candidates.push(useCandidate('Joe Biden', avatarBiden))
+  candidates.push(useCandidate('Jair Trump', avatarTrump))
+  candidates.push(useCandidate('Josnei Biden', avatarBiden))
   /* candidates.push(useCandidate(...)) */
 
   return candidates

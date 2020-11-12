@@ -1,6 +1,6 @@
 {
-  "name": "ds151-react-vote-assignment",
-  "version": "1.0.0",
+  "name": "american-election",
+  "version": "1.0.1",
   "private": true,
   "author": "Julio L. Muller",
   "scripts": {
