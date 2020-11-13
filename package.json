@@ -2,7 +2,11 @@
   "name": "american-election",
   "version": "1.0.1",
   "private": true,
-  "author": "Julio L. Muller",
+  "license": "MIT",
+  "author": {
+    "name": "Julio L. M",
+    "url": "https://juliolmuller.github.io/"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
