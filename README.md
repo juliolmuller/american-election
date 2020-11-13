@@ -1,32 +1,56 @@
-Tecnologia em Análise e Desenvolvimento de Sistemas
+<h1 align="center">
+  🤪 American Election
+</h1>
 
-Setor de Educação Profissional e Tecnológica - SEPT
+<p align="center">
+  <a href="#trophy-lessons-learned">Lessons Learned</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-technologies--resources">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#hammer-setting-up-the-environment">Environment Setup</a>
+</p>
 
-Universidade Federal do Paraná - UFPR
+<p align="center">
+  <img src="https://img.shields.io/static/v1?labelColor=000000&color=24243e&label=created%20at&message=Nov%202020" alt="Creation Date" />
 
----
+  <img src="https://img.shields.io/github/last-commit/juliolmuller/american-election?label=updated%20at&labelColor=000000&color=24243e" alt="Update Date" />
 
-*DS151 - Desenvolvimento para Dispositivos Móveis*
+  <img src="https://img.shields.io/github/v/tag/juliolmuller/american-election?label=latest%20version&labelColor=000000&color=24243e" alt="Latest Version" />
 
-Prof. Alexander Robert Kutzke
+  <img src="https://img.shields.io/static/v1?labelColor=000000&color=24243e&label=PRs&message=welcome" alt="Pull Requests Welcome" />
 
-* [Instruções para submissão de tarefas e trabalhos](https://gitlab.tadsufpr.net.br/ds122-alexkutzke/material/blob/master/instrucoes_submissao_tarefas_e_trabalhos.md)
-* [Video aula](https://www.youtube.com/watch?v=d6ZTnQNhoCo)
+  <img src="https://img.shields.io/github/license/juliolmuller/american-election?labelColor=000000&color=24243e" alt="Project License" />
+</p>
 
-# Atividade React
+![Application snapshot](./src/assets/app-overview.jpg)
 
-Você foi contratado pelo governo de um país norte americano para modernizar
-o processo de contagem dos votos das eleições dessa nação.
+Application developed as an assignment to college, subject Development for Mobile Devices, at UFPR, in order to learn building React applications firstly on web, so we can move on to React Native. The project seeks to apply knowledge in functional components, components communication (via *props* and *lifting state up*) and state management with Hooks.
 
-Para isso, você deve utilizar `React.js` e `create-react-app`. É uma exigência do departamento de inteligência
-do governo. *We can neither confirm nor deny this information*.
+[Check out the application running!](https://juliolmuller.github.io/american-election/)
 
-O sistema de votação deve ser simples. De forma geral, um objeto chamado `candidates`, que contém o nome dos candidatos, deve ser lido (pode estar *hardcoded* no `App.js`). A partir desse objeto, cada candidato será exibido na tela com uma quantidade de votos (zero a princípio) e um botão votar. Ao clicar no botão votar de um determinado candidato, seu contador de votos deve ser incrementado em uma unidade. Apenas uma. Não queremos denúncias de fraude.
+The proposal was to build a simple **votes counter system** with hard-coded candidates and, after finishing the input, display the rank of the most voted ones. A good-looking app may earn extra points 😍.
 
-Ao final da contagem, um botão "Finalizar contagem" será pressionado. O conteúdo da tela será, então, substituído pela relação de candidatos e a quantidade de seus votos e uma mensagem informando o vencedor deverá ser apresentada.
+## :trophy: Lessons Learned
 
-Exemplo de funcionamento:
+- Functional components;
+- React Hooks (and custom Hooks);
+- Synchronized state update ([see nice article](https://medium.com/javascript-in-plain-english/commons-mistakes-with-react-usestate-hook-and-how-to-prevent-them-43c811ca7451));
 
-![Sistema de votação](https://gitlab.tadsufpr.net.br/ds151-alexkutzke/ds151-react-vote-assignment/raw/master/images/exemplo.gif)
+## :rocket: Technologies & Resources
 
-"Pontos extras para um layout maneiro" =>  *We can neither confirm nor deny this information*.
+**Frontend:**
+- React.js 17
+- Create-React-App
+- Animate.css
+
+**Development:**
+- Visual Studio Code
+- NPM routines
+
+## :hammer: Setting up the Environment
+
+Make sure to have **Node.js 10+** installed in your machine and its **npm** available in the command line, then use the following routines:
+
+```bash
+$ npm install     # download dependencies
+$ npm start       # run development server
+$ npm run build   # build files for production
+```
