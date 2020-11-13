@@ -7,9 +7,10 @@
     "name": "Julio L. M",
     "url": "https://juliolmuller.github.io/"
   },
+  "homepage": "https://juliolmuller.github.io/american-election",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf docs/ && react-scripts build && mv build/ docs/",
     "eject": "react-scripts eject"
   },
   "dependencies": {

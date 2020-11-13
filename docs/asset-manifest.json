@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/american-election/static/css/main.a1f41e3c.chunk.css",
+    "main.js": "/american-election/static/js/main.d71b2dd0.chunk.js",
+    "main.js.map": "/american-election/static/js/main.d71b2dd0.chunk.js.map",
+    "runtime-main.js": "/american-election/static/js/runtime-main.2442a6b3.js",
+    "runtime-main.js.map": "/american-election/static/js/runtime-main.2442a6b3.js.map",
+    "static/css/2.a1596f27.chunk.css": "/american-election/static/css/2.a1596f27.chunk.css",
+    "static/js/2.cc86c010.chunk.js": "/american-election/static/js/2.cc86c010.chunk.js",
+    "static/js/2.cc86c010.chunk.js.map": "/american-election/static/js/2.cc86c010.chunk.js.map",
+    "index.html": "/american-election/index.html",
+    "static/css/2.a1596f27.chunk.css.map": "/american-election/static/css/2.a1596f27.chunk.css.map",
+    "static/css/main.a1f41e3c.chunk.css.map": "/american-election/static/css/main.a1f41e3c.chunk.css.map",
+    "static/js/2.cc86c010.chunk.js.LICENSE.txt": "/american-election/static/js/2.cc86c010.chunk.js.LICENSE.txt",
+    "static/media/avatar-biden.dde02773.png": "/american-election/static/media/avatar-biden.dde02773.png",
+    "static/media/avatar-trump.7179344f.png": "/american-election/static/media/avatar-trump.7179344f.png",
+    "static/media/spinner.1ef49492.svg": "/american-election/static/media/spinner.1ef49492.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2442a6b3.js",
+    "static/css/2.a1596f27.chunk.css",
+    "static/js/2.cc86c010.chunk.js",
+    "static/css/main.a1f41e3c.chunk.css",
+    "static/js/main.d71b2dd0.chunk.js"
+  ]
+}
