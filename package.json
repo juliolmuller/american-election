@@ -1,6 +1,6 @@
 {
   "name": "american-election",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "license": "MIT",
   "author": "Julio L. Muller",
@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@lacussoft/eslint-config": "^1.0.1",
-    "react-scripts": "^4.0.1"
+    "react-scripts": "^4.0.3"
   },
   "eslintConfig": {
     "root": true,
