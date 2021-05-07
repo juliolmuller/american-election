@@ -8,25 +8,27 @@
   "scripts": {
     "serve": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src/ --fix"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@lacussoft/eslint-config": "^1.0.1",
+    "eslint": "^7.25.0",
+    "eslint-config-lacussoft": "^1.0.0",
     "react-scripts": "^4.0.3"
   },
   "eslintConfig": {
     "root": true,
     "extends": [
       "react-app",
-      "@lacussoft"
+      "lacussoft",
+      "lacussoft/react"
     ],
     "rules": {
-      "arrow-parens": "off",
       "no-shadow": "off"
     }
   },
