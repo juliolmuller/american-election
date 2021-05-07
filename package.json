@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "author": "Julio L. Muller",
-  "homepage": "https://juliolmuller.github.io/american-election",
+  "homepage": "https://american-election.vercel.app/",
   "scripts": {
     "serve": "react-scripts start",
     "build": "react-scripts build",
