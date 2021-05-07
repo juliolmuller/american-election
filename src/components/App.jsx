@@ -2,7 +2,7 @@ import { useElection, useCandidates } from '../data'
 import CandidatesDeck from './CandidatesDeck'
 import ElectionResult from './ElectionResult'
 
-const App = () => {
+function App() {
   const [isRunning, finish] = useElection()
   const candidates = useCandidates()
 

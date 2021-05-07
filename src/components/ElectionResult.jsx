@@ -1,8 +1,8 @@
 import spinner from '../assets/spinner.svg'
 
-const ElectionResult = (props) => {
-  const totalVotes = props.candidates.reduce((acc, { votes }) => acc + votes, 0)
-  const rank = [...props.candidates]
+function ElectionResult({ candidates }) {
+  const totalVotes = candidates.reduce((acc, { votes }) => acc + votes, 0)
+  const rank = [...candidates]
     .sort((c1, c2) => c2.votes - c1.votes)
     .map((candidate) => ({ ...candidate, percentage: candidate.votes / totalVotes }))
 
@@ -10,7 +10,8 @@ const ElectionResult = (props) => {
     <div className="election-result">
       <div className="election-winner">
         <img
-          src={spinner} className="spinner" alt="spinner" />
+          src={spinner} className="spinner" alt="spinner"
+        />
         <img
           src={rank[0].avatar}
           className="avatar animate__animated animate__bounce animate__repeat-3"
