@@ -1,13 +1,13 @@
 {
   "name": "american-election",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": true,
   "license": "MIT",
   "author": "Julio L. Muller",
   "homepage": "https://juliolmuller.github.io/american-election",
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf docs/ && react-scripts build && mv build/ docs/",
+    "build": "react-scripts build",
     "eject": "react-scripts eject"
   },
   "dependencies": {

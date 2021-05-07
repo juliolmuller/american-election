@@ -24,7 +24,7 @@
 
 Application developed as an assignment to college, subject Development for Mobile Devices, at UFPR, in order to learn building React applications firstly on web, so we can move on to React Native. The project seeks to apply knowledge in functional components, components communication (via *props* and *lifting state up*) and state management with Hooks.
 
-[Check out the application running!](https://juliolmuller.github.io/american-election/)
+[Check out the application running!](https://american-election.vercel.app/)
 
 The proposal was to build a simple **votes counter system** with hard-coded candidates and, after finishing the input, display the rank of the most voted ones. A good-looking app may earn extra points 😍.
 
