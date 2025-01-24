@@ -1,6 +1,6 @@
 {
   "name": "american-election",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": true,
   "license": "MIT",
   "author": "Julio L. Muller",
@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
