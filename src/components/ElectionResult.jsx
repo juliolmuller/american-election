@@ -1,17 +1,15 @@
-import spinner from '../assets/spinner.svg'
+import spinner from '../assets/spinner.svg';
 
 function ElectionResult({ candidates }) {
-  const totalVotes = candidates.reduce((acc, { votes }) => acc + votes, 0)
+  const totalVotes = candidates.reduce((acc, { votes }) => acc + votes, 0);
   const rank = [...candidates]
     .sort((c1, c2) => c2.votes - c1.votes)
-    .map((candidate) => ({ ...candidate, percentage: candidate.votes / totalVotes }))
+    .map((candidate) => ({ ...candidate, percentage: candidate.votes / totalVotes }));
 
   return (
     <div className="election-result">
       <div className="election-winner">
-        <img
-          src={spinner} className="spinner" alt="spinner"
-        />
+        <img src={spinner} className="spinner" alt="spinner" />
         <img
           src={rank[0].avatar}
           className="avatar animate__animated animate__bounce animate__repeat-3"
@@ -29,7 +27,7 @@ function ElectionResult({ candidates }) {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default ElectionResult
+export default ElectionResult;
