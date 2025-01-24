@@ -1,28 +1,29 @@
-import { useState } from 'react'
-import avatarTrump from './assets/avatar-trump.png'
-import avatarBiden from './assets/avatar-biden.png'
+import { useState } from 'react';
 
-export const useElection = () => {
-  const [isOpen, setState] = useState(true)
+import avatarBiden from './assets/avatar-biden.png';
+import avatarTrump from './assets/avatar-trump.png';
 
-  return [isOpen, () => setState(false)]
+export function useElection() {
+  const [isOpen, setState] = useState(true);
+
+  return [isOpen, () => setState(false)];
 }
 
-export const useCandidate = (candidateName, candidateAvatar) => {
-  const [name] = useState(candidateName)
-  const [avatar] = useState(candidateAvatar)
-  const [votes, setVotes] = useState(0)
+export function useCandidate(candidateName, candidateAvatar) {
+  const [name] = useState(candidateName);
+  const [avatar] = useState(candidateAvatar);
+  const [votes, setVotes] = useState(0);
 
-  const addVote = () => setVotes((votes) => votes + 1)
+  const addVote = () => setVotes((votes) => votes + 1);
 
-  return { name, avatar, votes, addVote }
+  return { name, avatar, votes, addVote };
 }
 
-export const useCandidates = () => {
-  const candidates = []
-  candidates.push(useCandidate('Jair Trump', avatarTrump))
-  candidates.push(useCandidate('Josnei Biden', avatarBiden))
+export function useCandidates() {
+  const candidates = [];
+  candidates.push(useCandidate('Jair Trump', avatarTrump));
+  candidates.push(useCandidate('Josnei Biden', avatarBiden));
   /* candidates.push(useCandidate(...)) */
 
-  return candidates
+  return candidates;
 }

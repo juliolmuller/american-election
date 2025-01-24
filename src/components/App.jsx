@@ -1,17 +1,15 @@
-import { useElection, useCandidates } from '../data'
-import CandidatesDeck from './CandidatesDeck'
-import ElectionResult from './ElectionResult'
+import { useElection, useCandidates } from '../data';
+import CandidatesDeck from './CandidatesDeck';
+import ElectionResult from './ElectionResult';
 
 function App() {
-  const [isRunning, finish] = useElection()
-  const candidates = useCandidates()
+  const [isRunning, finish] = useElection();
+  const candidates = useCandidates();
 
   return (
     <div id="app">
       <div className="container">
-        <h1 className="title">
-          American Election
-        </h1>
+        <h1 className="title">American Election</h1>
 
         {isRunning ? (
           <>
@@ -26,7 +24,7 @@ function App() {
         )}
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

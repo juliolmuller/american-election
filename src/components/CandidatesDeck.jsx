@@ -1,4 +1,4 @@
-import CandidateCard from './CandidateCard'
+import CandidateCard from './CandidateCard';
 
 function CandidatesDeck({ candidates }) {
   return (
@@ -7,7 +7,7 @@ function CandidatesDeck({ candidates }) {
         <CandidateCard key={candidate.name} {...candidate} />
       ))}
     </div>
-  )
+  );
 }
 
-export default CandidatesDeck
+export default CandidatesDeck;
