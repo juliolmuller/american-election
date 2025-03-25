@@ -10,7 +10,8 @@
     "prepare": "husky",
     "dev": "vite --open",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint --fix src/ eslint.config.js vite.config.js"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
@@ -21,9 +22,13 @@
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
     "@vitejs/plugin-react-swc": "^3.8.1",
+    "eslint": "^9.23.0",
+    "eslint-config-jlm": "^0.6.8",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
     "rollup-plugin-analyzer": "^4.0.0",
+    "typescript": "^5.8.2",
     "vite": "^6.2.3"
   }
 }
