@@ -14,7 +14,9 @@ export function useCandidate(candidateName, candidateAvatar) {
   const [avatar] = useState(candidateAvatar);
   const [votes, setVotes] = useState(0);
 
-  const addVote = () => setVotes((votes) => votes + 1);
+  function addVote() {
+    setVotes((votes) => votes + 1);
+  }
 
   return { name, avatar, votes, addVote };
 }

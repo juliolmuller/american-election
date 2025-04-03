@@ -1,4 +1,4 @@
-import { useElection, useCandidates } from '../data';
+import { useCandidates, useElection } from '../data';
 import CandidatesDeck from './CandidatesDeck';
 import ElectionResult from './ElectionResult';
 
